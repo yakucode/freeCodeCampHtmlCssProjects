@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <head>
+    <link rel="stylesheet" href="surveyStyle.css" />
+    <title>Survey Form</title>
+    <meta name="description" content="babbies first surveysite" />
+    <meta name="keywords" content="survey form project" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "jmm7htg",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <div id="headline" class="background">
+      <h1 id="title" class="text-center">freeCodeCamp Survey Project</h1>
+      <p id="description" class="description-text-center">
+        Thanks for filling out yer shit pal
+      </p>
+    </div>
+    <form id="survey-form">
+      <!--........................................................................-->
+      <div class="inputrect background">
+        <label for="name" id="name-label">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          class="inputfield"
+          required
+        /><br />
+      </div>
+      <!--........................................................................-->
+      <div class="inputrect background">
+        <label for="email" id="email-label">E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="inputfield"
+          placeholder="Your E-mail adress"
+          required
+        /><br />
+      </div>
+      <!--........................................................................-->
+      <div class="inputrect background">
+        <label for="number" id="number-label">Age:</label><br />
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="150"
+          class="inputfield"
+          name="age"
+          value="age"
+          placeholder="Your age"
+          required
+        /><br />
+      </div>
+      <!--........................................................................-->
+      <div class="inputrect background">
+        <label for="dropdown"> Why are you studying CS?</label><br />
+        <select id="dropdown" name="role" class="inputfield" required>
+          <option disabled selected value>Please pick an option</option>
+          <option value="jobhunt">Jobhunt</option>
+          <option value="student">Student</option>
+          <option value="carreerchange">Carrerchange</option>
+          <option value="whynot">Why not?</option>
+          <option value="noneofyourbusiness">
+            None of your business.
+          </option></select
+        ><br />
+      </div>
+      <!--........................................................................-->
+      <div id="radiogroup" class="background">
+        <label for="fun">Are you having fun with this course?</label><br />
+        <input name="fun" id="yes" type="radio" value="yes" />
+        <label for="yes">Yes!</label><br />
+        <input name="fun" id="abit" type="radio" value="abit" />
+        <label for="abit">A bit.</label><br />
+        <input name="fun" id="meh" type="radio" value="meh" />
+        <label for="meh">Meh..</label><br />
+        <input name="fun" id="no" type="radio" value="no" />
+        <label for="no">No.</label><br />
+      </div>
+      <!--........................................................................-->
+      <div id="checkgroup" class="background">
+        <label for="skills">
+          With which programming languages have you got experience?<br />Select
+          all that apply.</label
+        ><br />
+        <input name="skills" id="java" type="checkbox" value="java" />
+        <label for="java">Java</label><br />
+        <input name="skills" id="c#" type="checkbox" value="c#" />
+        <label for="c#">C#</label><br />
+        <input name="skills" id="python" type="checkbox" value="python" />
+        <label for="python">Python</label><br />
+        <input name="skills" id="c" type="checkbox" value="c" />
+        <label for="c">C</label><br />
+        <input name="skills" id="swift" type="checkbox" value="swift" />
+        <label for="swift">Swift</label><br />
+        <input name="skills" id="sql" type="checkbox" value="sql" />
+        <label for="sql">SQL</label><br />
+        <input name="skills" id="other" type="checkbox" value="other" />
+        <label for="other">Other</label><br />
+        <input name="skills" id="none" type="checkbox" value="none" />
+        <label for="none">None</label><br />
+      </div>
+
+      <!--........................................................................-->
+      <div class="textrect background">
+        <label for="userinput"
+          >You can leave a comment to the devs below! </label
+        ><br />
+        <textarea
+          id="userinput"
+          class="textarea"
+          name="comment"
+          maxlength="300"
+          placeholder="Type here!"
+        ></textarea>
+      </div>
+      <!--........................................................................-->
+      <button type="submit" id="submit" class="endbuttons background">
+        SUBMIT
+      </button>
+
+      <button type="reset" id="reset" class="endbuttons background">
+        resetto
+      </button>
+    </form>
+  </body>
+</html>

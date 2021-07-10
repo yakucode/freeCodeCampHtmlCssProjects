@@ -1,0 +1,126 @@
+#navcontainer {
+    background-color: aquamarine;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    height: max-content;
+    /* Full height */
+    position: fixed;
+    /* Make it stick, even on scroll */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+    font-size: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 11px 11px 5px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 11px 11px 5px rgba(0, 0, 0, 0.63);
+    background: #1C6EA4;
+    background-color: #f1f1f1;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    height: fit-content;
+    /* Full height */
+    position: fixed;
+    /* Make it stick, even on scroll */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 11px 11px 5px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 11px 11px 5px rgba(0, 0, 0, 0.63);
+    background: #1C6EA4;
+    background-color: #f1f1f1;
+}
+
+#navbar li {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+#navbar li:hover {
+    background-color: #555;
+}
+
+#navbar a:hover {
+    color: white;
+}
+
+#navbar header {
+    background: #bababa;
+    text-shadow: #e0e0e0 1px 1px 0;
+    color: black;
+    background: #bababa;
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #000000;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section {
+    font-size: 1rem;
+    width: 60%;
+    margin-bottom: 5vh;
+    padding: 20px 20px 20px 20px;
+    margin-left: 12%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 11px 11px 5px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 11px 11px 5px rgba(0, 0, 0, 0.63);
+    background: #1C6EA4;
+    background-color: #f1f1f1;
+}
+
+.main-section header {
+    background: #bababa;
+    text-shadow: #e0e0e0 1px 1px 0;
+    color: black;
+    background: #bababa;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+
+@media screen and (max-width: 1100px) {
+   
+    #navbarcontainer {
+        width: 100%;
+    }
+    #navbar {
+        width: 100%;
+        position: fixed;
+    }
+    #navbar ul {
+        width: 100%;
+        word-wrap: break-word;
+        text-align: center;
+        overflow: hidden;
+    }
+    #navbar header {
+        width: 100%;
+    }
+    #navbar li {
+        float: inline-start;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    #main-doc {
+        padding-top: 100px;
+    }
+}

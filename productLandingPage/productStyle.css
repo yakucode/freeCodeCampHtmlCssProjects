@@ -1,0 +1,226 @@
+body {
+    background: url(https://c.wallhere.com/photos/ef/c2/military_background_spots_texture-671817.jpg!d);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#header {
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #E6E9E3;
+    /* background: -moz-linear-gradient(left, #E6E9E3 0%, #585858 100%);
+    background: -webkit-linear-gradient(left, #E6E9E3 0%, #585858 100%);
+    background: linear-gradient(to right, #E6E9E3 0%, #585858 100%); */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    border: 5px outset #000000;
+    margin-bottom: 30px;
+    background-color:#969594;
+}
+
+#header-img {
+    height: inherit;
+    width: 8rem;
+    /* background-color: yellow; */
+}
+
+#logo {
+    /* background-color: black; */
+    width: 8rem;
+}
+
+#headline {
+    /* min-width: min-content; */
+    width: 40vw;
+    height: 100%;
+    /* background: white; */
+    font-size: 1.8vmax;
+    font-weight: bolder;
+    text-align: center;
+    padding-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 180%;
+}
+
+#navcontainer {
+    height: 100%;
+    font-size: 2vw;
+    /* background-color: chocolate; */
+}
+
+#nav-link {
+    display: inline;
+    padding: 1vw;
+}
+
+html {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 100%;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+#featWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.feat {
+    display: flex;
+    width: 50vw;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    border: 5px outset #000000;
+    background-color:#969594;
+}
+
+.featText {}
+
+.logo {
+    max-width: 150px;
+    max-height: 150px;
+    background-color: violet;
+    margin-right: 10px;
+}
+
+#secondLogo {
+    background-color: violet;
+}
+
+#test {
+    display: flex;
+    width: 50vw;
+    height: 25vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    border: 5px outset #000000;
+}
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+#foxhoundsum {
+    
+    background-color:#969594;
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    border: 5px outset #000000;
+}
+
+#videowrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 28px;
+}
+
+.inputrect {
+    margin-top: 28px;
+    background-color: #969594;
+    display: block;
+    
+    font-size: 2rem;
+    text-align: center;
+    width: 50vw;
+    height: fit-content;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 10px 13px -7px #000000, 26px 27px 9px -7px rgba(0, 0, 0, 0.69);
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    border: 5px outset #000000;
+    padding-bottom: 20px;
+}
+
+#email{
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 60%;
+    font-family: inherit;
+}
+
+#submit{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    #header {
+        width: 90vw;
+    }
+    
+    body{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .logo {
+      display: none;
+    }
+    #featWrapper{
+        width: 100vw;
+        
+        
+    }
+    .feat {
+        width: 90vw;
+        
+        
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    #foxhoundsum {
+        width: 90vw;
+    }
+
+    li {
+        font-size: 1.3rem;
+    }
+
+    #form {
+        width: 90vw;
+    }
+  }
+
